@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMHasLoaded', function() {
+            alert('DOMHasLoaded');
+            console.log('DOM has fully load DOM');
+        });
+    </script>
+
+    <h1>DOMContentLoaded</h1>
+    <button>click me</button>
+    <script>
+        window.addEventListener("DOMHasLoaded", event => {
+            document.querySelector("button").addEventListener("click", event => {
+                returnOne().then(value => {
+                    alert('Clicked!');
+                })
+            });
+        });
+        async function returnOne() {
+            return 'Clicked!';
+        }
+    </script>
+</body>
+
+</html>

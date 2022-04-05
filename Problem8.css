@@ -1,0 +1,16 @@
+
+@media only screen and (max-width: 749px) { 
+    div{
+        font-size:30px;
+    }
+}
+@media only screen and (min-width: 750px) and (max-width:1399px){
+    div{
+        font-size:20px;
+    }
+}
+@media only screen and (min-width:1400px) {
+    body {
+        font-size:10px;
+    }
+}
